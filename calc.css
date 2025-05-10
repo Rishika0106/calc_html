@@ -1,0 +1,19 @@
+.btns td {
+  background-color: rgb(220, 21, 21);
+  color: white;
+  width: 80px;
+  height: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#on {
+  background-color: red;
+}
+
+#screen {
+  background-color: beige;
+  color: black;
+  text-align: right;
+  height: 50px;
+}

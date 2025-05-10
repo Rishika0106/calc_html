@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Badminton Court</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f2ff;
+      text-align: center;
+    }
+
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 20px;
+      font-size: 2em;
+    }
+
+    .court-section {
+      margin-top: 30px;
+    }
+
+    .court-image {
+      width: 80%;
+      max-width: 600px;
+      border: 5px solid #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .shuttle {
+      position: relative;
+      width: 80px;
+      margin-top: 20px;
+      animation: flyAcross 3s linear infinite;
+    }
+
+    @keyframes flyAcross {
+      0% { transform: translateX(-300px) rotate(0deg); opacity: 0; }
+      25% { opacity: 1; }
+      50% { transform: translateX(0) rotate(180deg); }
+      100% { transform: translateX(300px) rotate(360deg); opacity: 0; }
+    }
+
+    .description {
+      margin: 30px auto;
+      max-width: 700px;
+      font-size: 1.2em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>🏸 Badminton Court Overview</header>
+
+  <div class="court-section">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/3/32/Badminton_Court_Diagram.svg"
+      alt="Badminton Court"
+      class="court-image"
+    />
+    <br>
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Shuttlecock_01.jpg/120px-Shuttlecock_01.jpg"
+      alt="Shuttlecock"
+      class="shuttle"
+    />
+  </div>
+
+  <div class="description">
+    <p>This is a standard badminton court used for both singles and doubles matches. The shuttlecock flies across the net as players rally with speed and strategy.</p>
+  </div>
+</body>
+</html>

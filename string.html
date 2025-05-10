@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("enter the two values")
+        let a = window.prompt("enter the value for a")
+        console.log(typeof(a))
+        a=parseInt(a)
+        let b = window.prompt("enter the value for b")
+        console.log(typeof(b))
+        b=parseInt(b)
+        let c=window.prompt("enter the required operation(+,-,*,/,%)")
+        //console.log(typeof(c))
+        function add(a,b)
+        {
+            return (a+b)
+        }
+        function sub(a,b)
+        {
+            return (a-b)
+        }
+        function mul(a,b)
+        {
+            return (a*b)
+        }
+        function div(a,b)
+        {
+            return (a/b)
+        }
+        function mod(a,b)
+        {
+            return (a%b)
+        }
+
+
+     if (c=='+')
+        {
+            let sum = add(a,b)
+            console.log(sum)
+        }
+        else if (c=='-')
+        {
+            let difference = sub(a,b)
+            console.log(difference)
+        }
+        else if (c=='*')
+        {
+            let product = mul(a,b)
+            console.log(product)
+        }
+        else if (c=='/')
+        {
+            if(b!=0){
+            let product = mul(a,b)
+            console.log(product)
+            }
+            else
+            {
+                console.log("not divisible")
+            }
+        }
+        else 
+        {
+            if(b!=0){
+            let result = mod(a,b)
+            console.log(result)
+            }
+            else
+            {
+                console.log("not divisible")
+            }
+            
+
+        }

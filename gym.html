@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PowerZone Gym</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #232526, #414345);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ff4500;
+      padding: 20px;
+      font-size: 2.5em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .gym-image {
+      width: 300px;
+      border-radius: 15px;
+      margin-top: 20px;
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    .section h2 {
+      color: #FFD700;
+      font-size: 2em;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    .section p {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>💪 PowerZone Gym</header>
+
+  <div class="section">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Gym_Tegelen.jpg/800px-Gym_Tegelen.jpg"
+      alt="Gym Equipment"
+      class="gym-image" />
+
+    <h2>Train Hard, Stay Fit</h2>
+    <p>At PowerZone Gym, we provide top-tier equipment, certified trainers, and a motivating environment to help you achieve your fitness goals.</p>
+  </div>
+</body>
+</html>
